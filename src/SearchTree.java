@@ -31,8 +31,11 @@ public class SearchTree {
         }
         if (data.compareTo(rootNode.data) > 0) { // data > root data
             rootNode.right = addNodeBst(rootNode.right, data);
+            // setting the reference to parent
+            rootNode.parent = rootNode;
         } else if (data.compareTo(rootNode.data) < 0) { // data < root data
             rootNode.left = addNodeBst(rootNode.left, data);
+            rootNode.parent = rootNode;
         }
         return rootNode;
     }

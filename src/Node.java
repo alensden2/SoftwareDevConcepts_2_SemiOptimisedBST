@@ -8,11 +8,13 @@ public class Node {
     int searchFrequency;
     Node left;
     Node right;
+    Node parent;
 
     Node(String data) {
         this.data = data;
         this.left = null;
         this.right = null;
+        this.parent = null;
         this.searchFrequency = 0;
     }
 }
