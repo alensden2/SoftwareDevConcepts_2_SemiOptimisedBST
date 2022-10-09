@@ -1,5 +1,11 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
+    SearchTree searchTree = new SearchTree();
+    searchTree.add("car");
+    searchTree.add("bike");
+    searchTree.add("aeroplane");
+    searchTree.add("myria");
+
+    searchTree.inorder();
     }
 }
