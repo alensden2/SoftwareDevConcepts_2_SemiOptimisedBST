@@ -26,6 +26,7 @@ public class TreeMethods {
             return 0;
         } else if (rootNode.data.equalsIgnoreCase(key)) {
             // the node is the root
+            rootNode.searchFrequency += 1;
             return depth;
         } else if (key.compareTo(rootNode.data) > 0) { // data > root data
             depth += 1;

@@ -137,4 +137,26 @@ public class SearchTreeTests {
         int returns = searchTree.find("sss");
         assertEquals(0, returns);
     }
+
+    @Test
+    public void frequencyIncreaseWithFind() {
+        SearchTree searchTree = new SearchTree();
+        searchTree.add("egg");
+        searchTree.add("carrot");
+        searchTree.add("lentil");
+        searchTree.add("apple");
+        searchTree.add("date");
+        searchTree.add("fig");
+        searchTree.add("yam");
+        int returns = searchTree.find("carrot");
+        int returns1 = searchTree.find("egg");
+        int returns2 = searchTree.find("lentil");
+        int returns4 = searchTree.find("carrot");
+        int returns5 = searchTree.find("carrot");
+        int returns6 = searchTree.find("egg");
+        int returns7= searchTree.find("fig");
+        int returns8 = searchTree.find("carrot");
+        int returns9 = searchTree.find("apple");
+        assertEquals(2, returns);
+    }
 }

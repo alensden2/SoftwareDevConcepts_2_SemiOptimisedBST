@@ -4,9 +4,6 @@
     <list default="true" id="2eb62f7d-6a84-44de-a332-8fe6abaf79d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/SearchTreeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/SearchTreeTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TreeMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,11 +61,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTreeTests.testDepthFind" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTreeTests.frequencyIncreaseWithFind" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Assignment_2_bst" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SearchTreeTests" />
-      <option name="METHOD_NAME" value="testDepthFind" />
+      <option name="METHOD_NAME" value="frequencyIncreaseWithFind" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -115,10 +112,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.SearchTreeTests" />
+        <item itemvalue="TestNG.SearchTreeTests.frequencyIncreaseWithFind" />
         <item itemvalue="TestNG.SearchTreeTests.testTreeDepth1" />
         <item itemvalue="TestNG.SearchTreeTests.testTreeDepth" />
         <item itemvalue="TestNG.SearchTreeTests.testDynamicArrayDuplicateEntry" />
-        <item itemvalue="TestNG.SearchTreeTests.testDepthFind" />
       </list>
     </recent_temporary>
   </component>
@@ -147,97 +144,23 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/DynamicArray.java</url>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
           <line>28</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/DynamicArray.java</url>
-          <line>38</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/DynamicArray.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/DynamicArray.java</url>
-          <line>31</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/SearchTree.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="14" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/SearchTree.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/SearchTree.java</url>
-          <line>22</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/SearchTree.java</url>
-          <line>23</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/SearchTree.java</url>
-          <line>25</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/SearchTree.java</url>
-          <line>27</line>
-          <option name="timeStamp" value="19" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/DynamicArray.java</url>
-          <line>32</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/DynamicArray.java</url>
-          <line>33</line>
-          <option name="timeStamp" value="23" />
-        </line-breakpoint>
-        <line-breakpoint type="java-line">
-          <url>file://$PROJECT_DIR$/src/DynamicArray.java</url>
-          <line>34</line>
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Test/SearchTreeTests.java</url>
-          <line>94</line>
-          <option name="timeStamp" value="27" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Test/SearchTreeTests.java</url>
-          <line>108</line>
-          <option name="timeStamp" value="28" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Test/SearchTreeTests.java</url>
-          <line>136</line>
-          <option name="timeStamp" value="29" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/SearchTree.java</url>
-          <line>51</line>
-          <properties class="SearchTree" method="find">
-            <option name="EMULATED" value="true" />
-            <option name="WATCH_EXIT" value="false" />
-          </properties>
-          <option name="timeStamp" value="25" />
+          <line>158</line>
+          <option name="timeStamp" value="33" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+    <pin-to-top-manager>
+      <pinned-members>
+        <PinnedItemInfo parentTag="TreeMethods" memberName="depth" />
+      </pinned-members>
+    </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/Assignment_2_bst$SearchTreeTests_testAddBoundaryCasesSameItem.ic" NAME="SearchTreeTests.testAddBoundaryCasesSameItem Coverage Results" MODIFIED="1665348665105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
