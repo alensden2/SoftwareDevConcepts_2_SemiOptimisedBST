@@ -3,6 +3,7 @@ public class SearchTree {
     Node rootNode;
     // initialised size to 100
     DynamicArray arrayOfNodes = new DynamicArray(100);
+    TreeMethods treeMethods = new TreeMethods();
 
     SearchTree() {
         rootNode = null;
@@ -18,26 +19,13 @@ public class SearchTree {
             return false;
         } else {
             // if the tree is empty
-            rootNode = addNodeBst(rootNode, key);
-            return true;
+            if (arrayOfNodes.getIndexOfElement(key) == -2) {
+                rootNode = treeMethods.addNodeBst(rootNode, key);
+                arrayOfNodes.addElement(key);
+                return true;
+            }
+            return false;
         }
-    }
-
-
-    Node addNodeBst(Node rootNode, String data) {
-        if (rootNode == null) {
-            rootNode = new Node(data);
-            return rootNode;
-        }
-        if (data.compareTo(rootNode.data) > 0) { // data > root data
-            rootNode.right = addNodeBst(rootNode.right, data);
-            // setting the reference to parent
-            rootNode.parent = rootNode;
-        } else if (data.compareTo(rootNode.data) < 0) { // data < root data
-            rootNode.left = addNodeBst(rootNode.left, data);
-            rootNode.parent = rootNode;
-        }
-        return rootNode;
     }
 
     //
@@ -61,12 +49,13 @@ public class SearchTree {
      * Return - int (depth of key)
      */
     int find(String key) {
-        if (key == null || key == "") {
+        if ((key == null) || (key == "")) {
             return 0;
-        } else {
-            int depth = 0;
+        } else if (arrayOfNodes.getIndexOfElement(key) != -2) {
+            int depth = treeMethods.treeDepth(rootNode, key);
             return depth;
         }
+        return 0;
     }
 
     /*
