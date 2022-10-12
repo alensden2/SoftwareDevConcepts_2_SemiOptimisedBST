@@ -157,6 +157,7 @@ public class SearchTreeTests {
         int returns7= searchTree.find("fig");
         int returns8 = searchTree.find("carrot");
         int returns9 = searchTree.find("apple");
+        searchTree.reset();
         assertEquals(2, returns);
     }
 }

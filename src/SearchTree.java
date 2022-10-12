@@ -4,6 +4,7 @@ public class SearchTree {
     // initialised size to 100
     DynamicArray arrayOfNodes = new DynamicArray(100);
     TreeMethods treeMethods = new TreeMethods();
+    Node root=rootNode;
 
     SearchTree() {
         rootNode = null;
@@ -62,6 +63,12 @@ public class SearchTree {
      * Method 3 - changes counters to 0
      */
     void reset() {
+
+        if (root != null) {
+            inorder_Recursive(root.left);
+            root.searchFrequency = 0;
+            inorder_Recursive(root.right);
+        }
     }
 
     /*
