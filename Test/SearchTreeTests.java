@@ -134,8 +134,8 @@ public class SearchTreeTests {
         searchTree.add("date");
         searchTree.add("fig");
         searchTree.add("yam");
-        int returns = searchTree.find("sss");
-        assertEquals(0, returns);
+        int returns = searchTree.find("yam");
+        assertEquals(3, returns);
     }
 
     @Test

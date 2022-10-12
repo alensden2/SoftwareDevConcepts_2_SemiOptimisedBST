@@ -9,10 +9,11 @@ public class TreeMethods {
         if (data.compareTo(rootNode.data) > 0) { // data > root data
             rootNode.right = addNodeBst(rootNode.right, data);
             // setting the reference to parent
-            rootNode.parent = rootNode;
+            rootNode.right.parent = rootNode;
         } else if (data.compareTo(rootNode.data) < 0) { // data < root data
             rootNode.left = addNodeBst(rootNode.left, data);
-            rootNode.parent = rootNode;
+            // setting the reference to parent
+            rootNode.left.parent = rootNode;
         }
         return rootNode;
     }

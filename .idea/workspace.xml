@@ -4,6 +4,7 @@
     <list default="true" id="2eb62f7d-6a84-44de-a332-8fe6abaf79d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Test/SearchTreeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/SearchTreeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TreeMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeMethods.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -145,14 +146,9 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
-          <line>28</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/Test/SearchTreeTests.java</url>
           <line>158</line>
-          <option name="timeStamp" value="33" />
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -163,6 +159,7 @@
     </pin-to-top-manager>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Assignment_2_bst$SearchTreeTests_testTreeDepth1.ic" NAME="SearchTreeTests.testTreeDepth1 Coverage Results" MODIFIED="1665444023848" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/Assignment_2_bst$SearchTreeTests_testAddBoundaryCasesSameItem.ic" NAME="SearchTreeTests.testAddBoundaryCasesSameItem Coverage Results" MODIFIED="1665348665105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>
