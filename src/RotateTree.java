@@ -3,8 +3,7 @@ public class RotateTree {
         if (rotateNodeChild.searchFrequency > rotateNode.searchFrequency) {
             if (rotateNode.left == rotateNodeChild) {
                 // right rotation
-                rightRotate(rotateNode);
-                System.out.println("right rotation");
+                //rightRotate(rotateNode);
             } else if (rotateNode.right == rotateNodeChild) {
                 // left rotation
                 System.out.println("left rotation");

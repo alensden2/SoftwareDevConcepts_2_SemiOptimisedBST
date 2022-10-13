@@ -38,7 +38,7 @@ public class SearchTree {
     void inorder_Recursive(Node root) {
         if (root != null) {
             inorder_Recursive(root.left);
-            System.out.print(root.data + " ");
+            System.out.print(root.data + " "+ root.searchFrequency+"\n");
             inorder_Recursive(root.right);
         }
     }

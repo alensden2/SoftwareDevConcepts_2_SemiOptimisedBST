@@ -136,9 +136,9 @@ public class SearchTreeTests {
         searchTree.add("yam");
         searchTree.find("egg");
         searchTree.find("egg");
+        int r=searchTree.find("carrot");
         searchTree.find("carrot");
-        searchTree.find("carrot");
-        int returns = searchTree.find("carrot");
+        int returns = searchTree.find("yam");
         searchTree.find("carrot");
 
         assertEquals(5, returns);

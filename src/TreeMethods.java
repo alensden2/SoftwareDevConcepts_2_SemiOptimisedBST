@@ -24,39 +24,30 @@ public class TreeMethods {
         // initialising the depth as -1 as the level begins from 0
         // searching to find the node.
         // if the tree is empty
-
-
+        int depth=0;
         if (rootNode == null) {
             return 0;
-        } else if (rootNode.data.equalsIgnoreCase(key)) {
-            // the node is the root
-            rootNode.searchFrequency += 1;
-            // rotateNodeChild - will be the new root
-            // rotation will be performed on rotateNode
-            // rotateNodeParent is the parent of the rotate node
-
-            if (rootNode.parent == null) {
-                // no rotation all good
-            } else if (rootNode.parent.parent == null) {
-                Node rotateNode = rootNode.parent;
-                Node rotateNodeParent = new Node(null);
-                Node rotateNodeChild = rootNode;
-                rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild);
-            } else {
-                Node rotateNode = rootNode.parent;
-                Node rotateNodeParent = rootNode.parent.parent;
-                Node rotateNodeChild = rootNode;
-                rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild);
-            }
-
-            return depth;
-        } else if (key.compareTo(rootNode.data) > 0) { // data > root data
-            depth += 1;
-            treeDepth(rootNode.right, key);
-        } else if (key.compareTo(rootNode.data) < 0) { // data < root data
-            depth += 1;
-            treeDepth(rootNode.left, key);
         }
+        if ((rootNode.data.compareToIgnoreCase(key)==0 ) || (depth=treeDepth(rootNode.left,key))>=0 ||(depth=treeDepth(rootNode.right,key))>=0)
+            return depth +1;
         return depth;
-    } // pse change the above function
+
+/*        if (rootNode.parent == null) {
+            System.out.println("no rotation");
+            // no rotation all good
+        } else if (rootNode.parent.parent == null) {
+            Node rotateNode = rootNode.parent;
+            Node rotateNodeParent = new Node(null);
+            Node rotateNodeChild = rootNode;
+            rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild);
+        } else {
+            Node rotateNode = rootNode.parent;
+            Node rotateNodeParent = rootNode.parent.parent;
+            Node rotateNodeChild = rootNode;
+            rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild);
+        }
+
+        return depth;*/
+    }
+    // pse change the above function
 }
