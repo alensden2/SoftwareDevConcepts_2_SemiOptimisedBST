@@ -134,8 +134,14 @@ public class SearchTreeTests {
         searchTree.add("date");
         searchTree.add("fig");
         searchTree.add("yam");
-        int returns = searchTree.find("yam");
-        assertEquals(3, returns);
+        searchTree.find("egg");
+        searchTree.find("egg");
+        searchTree.find("carrot");
+        searchTree.find("carrot");
+        int returns = searchTree.find("carrot");
+        searchTree.find("carrot");
+
+        assertEquals(5, returns);
     }
 
     @Test
@@ -154,7 +160,7 @@ public class SearchTreeTests {
         int returns4 = searchTree.find("carrot");
         int returns5 = searchTree.find("carrot");
         int returns6 = searchTree.find("egg");
-        int returns7= searchTree.find("fig");
+        int returns7 = searchTree.find("fig");
         int returns8 = searchTree.find("carrot");
         int returns9 = searchTree.find("apple");
         searchTree.reset();

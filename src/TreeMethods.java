@@ -24,21 +24,31 @@ public class TreeMethods {
         // initialising the depth as -1 as the level begins from 0
         // searching to find the node.
         // if the tree is empty
-        Node parentNodeRotate;
-        Node currentNodeRotate;
-        Node childNodeLeftRotate;
-        Node childNodeRightRotate;
+
+
         if (rootNode == null) {
             return 0;
         } else if (rootNode.data.equalsIgnoreCase(key)) {
             // the node is the root
             rootNode.searchFrequency += 1;
-            parentNodeRotate = rootNode.parent;
-            currentNodeRotate = rootNode;
-            childNodeLeftRotate = rootNode.left;
-            childNodeRightRotate = rootNode.right;
+            // rotateNodeChild - will be the new root
+            // rotation will be performed on rotateNode
+            // rotateNodeParent is the parent of the rotate node
 
-            rotateTree.isRotateRequired(parentNodeRotate, currentNodeRotate, childNodeLeftRotate, childNodeRightRotate);
+            if (rootNode.parent == null) {
+                // no rotation all good
+            } else if (rootNode.parent.parent == null) {
+                Node rotateNode = rootNode.parent;
+                Node rotateNodeParent = new Node(null);
+                Node rotateNodeChild = rootNode;
+                rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild);
+            } else {
+                Node rotateNode = rootNode.parent;
+                Node rotateNodeParent = rootNode.parent.parent;
+                Node rotateNodeChild = rootNode;
+                rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild);
+            }
+
             return depth;
         } else if (key.compareTo(rootNode.data) > 0) { // data > root data
             depth += 1;
