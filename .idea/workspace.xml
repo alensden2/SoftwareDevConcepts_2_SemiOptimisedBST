@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2eb62f7d-6a84-44de-a332-8fe6abaf79d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test/SearchTreeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/SearchTreeTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RotateTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RotateTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchTree.java" afterDir="false" />
@@ -150,19 +149,20 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SearchTree.java</url>
-          <line>55</line>
-          <option name="timeStamp" value="277" />
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="307" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SearchTree.java</url>
-          <line>56</line>
-          <option name="timeStamp" value="279" />
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="308" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
     <pin-to-top-manager>
       <pinned-members>
+        <PinnedItemInfo parentTag="Node" memberName="parent" />
         <PinnedItemInfo parentTag="TreeMethods" memberName="depth" />
         <PinnedItemInfo parentTag="Node" memberName="data" />
         <PinnedItemInfo parentTag="Node" memberName="searchFrequency" />

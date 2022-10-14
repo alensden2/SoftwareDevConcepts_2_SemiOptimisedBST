@@ -1,18 +1,21 @@
 public class RotateTree {
-    void isRotateRequired(Node rotateNode, Node rotateNodeParent, Node rotateNodeChild) {
+    Node isRotateRequired(Node rotateNode, Node rotateNodeParent, Node rotateNodeChild,Node oldRoot) {
         if (rotateNodeChild.searchFrequency > rotateNode.searchFrequency) {
             if (rotateNode.left == rotateNodeChild) {
                 // right rotation
-                rightRotate(rotateNode);
+                Node rootChanged  = rightRotate(rotateNode,oldRoot);
                 System.out.println("right rotate");
+                return rootChanged;
             } else if (rotateNode.right == rotateNodeChild) {
                 // left rotation
                 System.out.println("left rotation");
+
             }
         } else {
             // no rotation required
             System.out.println("no rotation");
         }
+        return oldRoot;
     }
 
     Node leftRotate(Node parentNode, Node currentNode, Node leftNode) {
@@ -20,10 +23,10 @@ public class RotateTree {
         return currentNode;
     }
 
-    Node rightRotate(Node rotateNode) {
-        Node parentOfRotateNode = rotateNode.parent;
-        Node childOfRotateNode = rotateNode.left;
-        rotateNode.left = childOfRotateNode.right;
+    Node rightRotate(Node rotateNode,Node oldRoot) {
+        Node parentOfRotateNode = rotateNode.parent; //null rota=egg
+        Node childOfRotateNode = rotateNode.left;   // carrot
+        rotateNode.left = childOfRotateNode.right;  // right is date
 
         if(childOfRotateNode.right != null){
             childOfRotateNode.right.parent = rotateNode;
@@ -40,8 +43,10 @@ public class RotateTree {
                 parentOfRotateNode.right = childOfRotateNode;
             }
         }
-
-        return childOfRotateNode;
+        if(childOfRotateNode.parent == null){
+            oldRoot = childOfRotateNode;
+        }
+        return oldRoot;
     }
 
 

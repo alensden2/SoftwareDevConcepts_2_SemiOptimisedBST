@@ -8,6 +8,7 @@ public class Main {
         searchTree.add("date");
         searchTree.add("fig");
         searchTree.add("yam");
+
         searchTree.find("egg");
         searchTree.find("egg");
         searchTree.find("carrot");
@@ -16,6 +17,9 @@ public class Main {
         searchTree.find("apple");
         searchTree.find("apple");
         searchTree.find("apple");
+        searchTree.find("apple");
+//
+        searchTree.find("fig");
         searchTree.find("apple");
 
         //searchTree.inorder();

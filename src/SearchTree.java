@@ -53,9 +53,11 @@ public class SearchTree {
         if ((key == null) || (key == "")) {
             return 0;
         } else if (arrayOfNodes.getIndexOfElement(key) != -2) {
-            rootNode = treeMethods.ifRootNotNull(rootNode);
-            int depth = treeMethods.treeDepth(rootNode, key);
-            return depth;
+//            rootNode = treeMethods.ifRootNotNull(rootNode);
+            // depth
+            Node oldRoot = rootNode;
+            rootNode = treeMethods.treeDepth(rootNode, key,1,oldRoot);
+            return 1;// return
         }
         return 0;
     }
