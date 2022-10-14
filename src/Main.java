@@ -9,19 +9,28 @@ public class Main {
         searchTree.add("fig");
         searchTree.add("yam");
 
-        searchTree.find("egg");
-        searchTree.find("egg");
-        searchTree.find("carrot");
-        searchTree.find("carrot");
-        searchTree.find("carrot");
-        searchTree.find("apple");
-        searchTree.find("apple");
-        searchTree.find("apple");
-        searchTree.find("apple");
-//
-        searchTree.find("fig");
-        searchTree.find("apple");
+//        searchTree.find("egg");
+//        searchTree.find("egg");
+//        searchTree.find("carrot");
+//        searchTree.find("carrot");
+//        searchTree.find("carrot");
+//        searchTree.find("apple");
+//        searchTree.find("apple");
+//        searchTree.find("apple");
+//        searchTree.find("apple");
+////
+//        searchTree.find("fig");
+//        searchTree.find("yam");
+//        searchTree.find("egg");
+//        searchTree.find("egg");
+//        searchTree.find("apple");
 
+//        searchTree.find("carrot");
+//        searchTree.find("apple");
+//        searchTree.find("apple");
+//        searchTree.find("date");
+//        searchTree.find("date");
         //searchTree.inorder();
+
     }
 }
