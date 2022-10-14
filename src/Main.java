@@ -8,11 +8,16 @@ public class Main {
         searchTree.add("date");
         searchTree.add("fig");
         searchTree.add("yam");
+        searchTree.find("egg");
+        searchTree.find("egg");
         searchTree.find("carrot");
-
+        searchTree.find("carrot");
+        searchTree.find("carrot");
+        searchTree.find("apple");
+        searchTree.find("apple");
         searchTree.find("apple");
         searchTree.find("apple");
 
-        searchTree.inorder();
+        //searchTree.inorder();
     }
 }

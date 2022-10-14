@@ -4,7 +4,7 @@ public class SearchTree {
     // initialised size to 100
     DynamicArray arrayOfNodes = new DynamicArray(100);
     TreeMethods treeMethods = new TreeMethods();
-    Node root=rootNode;
+    Node root = rootNode;
 
     SearchTree() {
         rootNode = null;
@@ -38,7 +38,7 @@ public class SearchTree {
     void inorder_Recursive(Node root) {
         if (root != null) {
             inorder_Recursive(root.left);
-            System.out.print(root.data + " "+ root.searchFrequency+"\n");
+            System.out.print(root.data + " " + root.searchFrequency + "\n");
             inorder_Recursive(root.right);
         }
     }
@@ -53,6 +53,7 @@ public class SearchTree {
         if ((key == null) || (key == "")) {
             return 0;
         } else if (arrayOfNodes.getIndexOfElement(key) != -2) {
+            rootNode = treeMethods.ifRootNotNull(rootNode);
             int depth = treeMethods.treeDepth(rootNode, key);
             return depth;
         }

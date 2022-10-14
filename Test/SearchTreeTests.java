@@ -141,7 +141,7 @@ public class SearchTreeTests {
         int returns = searchTree.find("yam");
         searchTree.find("carrot");
 
-        assertEquals(5, returns);
+        assertEquals(3, returns);
     }
 
     @Test
