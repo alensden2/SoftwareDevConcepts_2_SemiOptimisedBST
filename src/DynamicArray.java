@@ -26,10 +26,9 @@ public class DynamicArray {
     }
 
     int getIndexOfElement(String element) {
-        if(dynamicArray.length == 0){
+        if (dynamicArray.length == 0) {
             return -1;
-        }
-        else {
+        } else {
             for (int i = 0; i < dynamicArray.length; i++) {
                 if (dynamicArray[i] == element) {
                     return i;

@@ -22,7 +22,7 @@ public class TreeMethods {
     }
 
     // can refactor ? pse do
-    Node treeDepth(Node rootNode, String key, int depth,Node oldRoot) {
+    Node treeDepth(Node rootNode, String key, int depth, Node oldRoot) {
         // initialising the depth as -1 as the level begins from 0
         // searching to find the node.
         // if the tree is empty
@@ -31,21 +31,20 @@ public class TreeMethods {
         }
         if ((rootNode.data.compareToIgnoreCase(key) == 0)) {
             rootNode.searchFrequency += 1;
-            rootNode  = checkForRotation(rootNode,oldRoot);
+            rootNode = checkForRotation(rootNode, oldRoot);
             return rootNode;
         }
-        if(rootNode.left != null){
-           oldRoot =   treeDepth(rootNode.left, key, depth+1,oldRoot);
+        if (rootNode.left != null) {
+            oldRoot = treeDepth(rootNode.left, key, depth + 1, oldRoot);
         }
-        if(rootNode.right != null){
-          oldRoot = treeDepth(rootNode.right, key, depth+1,oldRoot);
+        if (rootNode.right != null) {
+            oldRoot = treeDepth(rootNode.right, key, depth + 1, oldRoot);
         }
-
 
         return oldRoot;
     }
 
-    Node checkForRotation(Node rootNode,Node oldRoot) {
+    Node checkForRotation(Node rootNode, Node oldRoot) {
         if (rootNode.parent == null) {
             System.out.println("no rotation");
             // no rotation all good
@@ -53,38 +52,38 @@ public class TreeMethods {
             Node rotateNode = rootNode.parent;
             Node rotateNodeParent = new Node(null);
             Node rotateNodeChild = rootNode;
-            Node nodeChanged  = rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild,oldRoot);
+            Node nodeChanged = rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild, oldRoot);
             return nodeChanged;
         } else {
             Node rotateNode = rootNode.parent;
             Node rotateNodeParent = rootNode.parent.parent;
             Node rotateNodeChild = rootNode;
-            oldRoot = rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild,oldRoot);
+            oldRoot = rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild, oldRoot);
             return oldRoot;
         }
         return oldRoot;
     }
     // pse change the above function
 
-//    String printTreeWithDepth(Node root1) {
-//        if (root1 != null) {
-//            if (root1.left != null) {
-//                printTreeWithDepth(root1.left);
-//            }
-//            String key = root1.data;
-//            int depth = treeDepth(root1, key,);
-//            System.out.println(depth);
-//            if (root1.right != null) {
-//                printTreeWithDepth(root1.right);
-//            }
-//
-//
-//        }
-//        return null;
-//    }
+    // String printTreeWithDepth(Node root1) {
+    // if (root1 != null) {
+    // if (root1.left != null) {
+    // printTreeWithDepth(root1.left);
+    // }
+    // String key = root1.data;
+    // int depth = treeDepth(root1, key,);
+    // System.out.println(depth);
+    // if (root1.right != null) {
+    // printTreeWithDepth(root1.right);
+    // }
+    //
+    //
+    // }
+    // return null;
+    // }
 
-    Node ifRootNotNull(Node root){
-        if(root.parent != null){
+    Node ifRootNotNull(Node root) {
+        if (root.parent != null) {
             ifRootNotNull(root.parent);
         }
         return root;
