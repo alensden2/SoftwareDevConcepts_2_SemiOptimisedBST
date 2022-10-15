@@ -10,26 +10,19 @@ public class TreeMethods {
         }
         if (data.compareTo(rootNode.data) > 0) { // data > root data
             rootNode.right = addNodeBst(rootNode.right, data);
-            // setting the reference to parent
-            rootNode.right.parent = rootNode;
+            rootNode.right.parent = rootNode; // setting the reference to parent
         } else if (data.compareTo(rootNode.data) < 0) { // data < root data
             rootNode.left = addNodeBst(rootNode.left, data);
-            // setting the reference to parent
-            rootNode.left.parent = rootNode;
+            rootNode.left.parent = rootNode; // setting the reference to parent
         }
-
         return rootNode;
     }
 
-    // can refactor ? pse do
     Node treeDepth(Node rootNode, String key, int depth, Node oldRoot) {
-        // initialising the depth as -1 as the level begins from 0
-        // searching to find the node.
-        // if the tree is empty
-        if (rootNode == null) {
+        if (rootNode == null) {  // If the tree is empty
             return oldRoot;
         }
-        if ((rootNode.data.compareToIgnoreCase(key) == 0)) {
+        if ((rootNode.data.compareToIgnoreCase(key) == 0)) { // In case the root node is the element searched
             rootNode.searchFrequency += 1;
             rootNode = checkForRotation(rootNode, oldRoot);
             return rootNode;
@@ -47,7 +40,6 @@ public class TreeMethods {
     Node checkForRotation(Node rootNode, Node oldRoot) {
         if (rootNode.parent == null) {
             System.out.println("no rotation");
-            // no rotation all good
         } else if (rootNode.parent.parent == null) {
             Node rotateNode = rootNode.parent;
             Node rotateNodeParent = new Node(null);
@@ -63,24 +55,6 @@ public class TreeMethods {
         }
         return oldRoot;
     }
-    // pse change the above function
-
-    // String printTreeWithDepth(Node root1) {
-    // if (root1 != null) {
-    // if (root1.left != null) {
-    // printTreeWithDepth(root1.left);
-    // }
-    // String key = root1.data;
-    // int depth = treeDepth(root1, key,);
-    // System.out.println(depth);
-    // if (root1.right != null) {
-    // printTreeWithDepth(root1.right);
-    // }
-    //
-    //
-    // }
-    // return null;
-    // }
 
     Node ifRootNotNull(Node root) {
         if (root.parent != null) {
