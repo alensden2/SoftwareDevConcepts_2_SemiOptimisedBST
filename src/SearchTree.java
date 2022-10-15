@@ -86,7 +86,7 @@ public class SearchTree {
             // rootNode = treeMethods.ifRootNotNull(rootNode);
             // depth
             Node oldRoot = rootNode;
-            rootNode = treeMethods.treeDepth(rootNode, key, 1, oldRoot);
+            rootNode = treeMethods.rotateTree(rootNode, key, 1, oldRoot);
             return 1;// return
         }
         return 0;

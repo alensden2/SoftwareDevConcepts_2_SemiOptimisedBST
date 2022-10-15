@@ -43,7 +43,7 @@ public class TreeMethods {
         return rootNode;
     }
 
-    Node treeDepth(Node rootNode, String key, int depth, Node oldRoot) {
+    Node rotateTree(Node rootNode, String key, int depth, Node oldRoot) {
         if (rootNode == null) { // If the tree is empty
             return oldRoot;
         }
@@ -53,12 +53,12 @@ public class TreeMethods {
             return rootNode;
         }
         if (rootNode.left != null) {
-            oldRoot = treeDepth(rootNode.left, key, depth + 1, oldRoot);
+            oldRoot = rotateTree(rootNode.left, key, depth + 1, oldRoot);
         }
         if (rootNode.right != null) {
-            oldRoot = treeDepth(rootNode.right, key, depth + 1, oldRoot);
+            oldRoot = rotateTree(rootNode.right, key, depth + 1, oldRoot);
         }
-
+        
         return oldRoot;
     }
 
@@ -86,5 +86,10 @@ public class TreeMethods {
             ifRootNotNull(root.parent);
         }
         return root;
+    }
+
+    int findDepthNode(String key, Node currentTree){
+        int depth = 1;
+        return depth;
     }
 }
