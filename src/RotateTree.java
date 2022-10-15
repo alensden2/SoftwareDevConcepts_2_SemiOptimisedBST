@@ -1,3 +1,29 @@
+/**
+ * STUDENT DETAILS
+ *
+ *  Name - Alen Santosh John
+ * Email - al283652@dal.ca
+ * Banner ID - B00930528
+ * Assignment 2 - Binary Search Trees
+*/
+
+/**
+ *  RotateTree.java - Class file for a dynamic array of strings
+*/
+
+/**
+ * CLASS DESCRIPTION
+ *
+ * 
+ */
+
+/**
+ * CONSTRUCTORS AND METHODS
+ * 
+ * 1. Constructor - initializes the size of the array
+ * 2.
+ */
+
 public class RotateTree {
     Node isRotateRequired(Node rotateNode, Node rotateNodeParent, Node rotateNodeChild, Node oldRoot) {
         if (rotateNodeChild.searchFrequency > rotateNode.searchFrequency) {

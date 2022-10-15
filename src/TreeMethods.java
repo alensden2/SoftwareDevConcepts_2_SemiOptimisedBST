@@ -1,3 +1,28 @@
+/**
+ * STUDENT DETAILS
+ *
+ *  Name - Alen Santosh John
+ * Email - al283652@dal.ca
+ * Banner ID - B00930528
+ * Assignment 2 - Binary Search Trees
+*/
+
+/**
+ *  RotateTree.java - Class file for a dynamic array of strings
+*/
+
+/**
+ * CLASS DESCRIPTION
+ *
+ * 
+ */
+
+/**
+ * CONSTRUCTORS AND METHODS
+ * 
+ * 1. Constructor - initializes the size of the array
+ * 2.
+ */
 public class TreeMethods {
     RotateTree rotateTree = new RotateTree();
     int depth = 1;
@@ -19,7 +44,7 @@ public class TreeMethods {
     }
 
     Node treeDepth(Node rootNode, String key, int depth, Node oldRoot) {
-        if (rootNode == null) {  // If the tree is empty
+        if (rootNode == null) { // If the tree is empty
             return oldRoot;
         }
         if ((rootNode.data.compareToIgnoreCase(key) == 0)) { // In case the root node is the element searched
