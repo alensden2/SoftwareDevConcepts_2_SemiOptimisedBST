@@ -14,6 +14,10 @@ public class Main {
 
         searchTree.find("apple");
         searchTree.find("fig");
+        searchTree.find("fig");
+        searchTree.find("fig");
+        searchTree.find("fig");
+        searchTree.find("yam");
         searchTree.find("apple");
 
         // searchTree.find("egg");
