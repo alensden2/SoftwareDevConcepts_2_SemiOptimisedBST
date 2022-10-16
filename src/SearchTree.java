@@ -1,28 +1,42 @@
 /**
  * STUDENT DETAILS
- * 
+ * <p>
  * Name - Alen Santosh John
  * Email - al283652@dal.ca
  * Banner ID - B00930528
  * Assignment 2 - Binary Search Trees
- * 
+ * <p>
+ * <p>
+ * SearchTree.java - Class file for Search Tree
+ * <p>
+ * CLASS DESCRIPTION
+ * <p>
+ * Consists of all the pre-defined methods as mentioned in the assignment. This class calls on the
+ * Helper class named treeMethods. This class helps in add, find, reset and print tree.
+ * <p>
+ * SearchTree.java - Class file for Search Tree
+ * <p>
+ * CLASS DESCRIPTION
+ * <p>
+ * Consists of all the pre-defined methods as mentioned in the assignment. This class calls on the
+ * Helper class named treeMethods. This class helps in add, find, reset and print tree.
  */
 
-/** 
+/**
  * SearchTree.java - Class file for Search Tree
  */
 
 /**
  * CLASS DESCRIPTION
- * 
+ *
  * Consists of all the pre-defined methods as mentioned in the assignment. This class calls on the
  * Helper class named treeMethods. This class helps in add, find, reset and print tree.
- * 
+ *
  */
 
 /**
  * CONSTRUCTORS AND METHODS
- * 
+ *
  * 1. Constructor - initializes a null root node
  * 2. add(String key) - @param - String; @return - boolean
  * 3. find(String key) - @param - String @return - int
@@ -43,7 +57,7 @@ public class SearchTree {
     /*
      * Method 1 - adds key to tree
      * Input - String key
-     * 
+     *
      * @return - boolean
      */
     boolean add(String key) {
@@ -80,16 +94,18 @@ public class SearchTree {
      * Return - int (depth of key)
      */
     int find(String key) {
+        int depth = 0;
         if ((key == null) || (key == "")) {
             return 0;
         } else if (arrayOfNodes.getIndexOfElement(key) != -2) {
             // rootNode = treeMethods.ifRootNotNull(rootNode);
-            // depth
+            // depth 
+            depth = treeMethods.findDepthNode(key, rootNode);
             Node oldRoot = rootNode;
             rootNode = treeMethods.rotateTree(rootNode, key, 1, oldRoot);
-            return 1;// return
+            return depth;
         }
-        return 0;
+        return depth;
     }
 
     /*

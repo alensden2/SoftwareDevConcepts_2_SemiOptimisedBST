@@ -1,31 +1,37 @@
 /**
  * STUDENT DETAILS
- *
- *  Name - Alen Santosh John
+ * <p>
+ * Name - Alen Santosh John
  * Email - al283652@dal.ca
  * Banner ID - B00930528
  * Assignment 2 - Binary Search Trees
-*/
+ * <p>
+ * RotateTree.java - Class file for a dynamic array of strings
+ * <p>
+ * CLASS DESCRIPTION
+ */
 
 /**
  *  RotateTree.java - Class file for a dynamic array of strings
-*/
+ */
 
 /**
  * CLASS DESCRIPTION
  *
- * 
+ *
  */
 
 /**
  * CONSTRUCTORS AND METHODS
- * 
+ *
  * 1. Constructor - initializes the size of the array
  * 2.
  */
 public class TreeMethods {
     RotateTree rotateTree = new RotateTree();
     int depth = 1;
+    int depthOfNode = 1;
+    int depthOfNode1 = 0;
     Node rootNode;
 
     Node addNodeBst(Node rootNode, String data) {
@@ -58,7 +64,7 @@ public class TreeMethods {
         if (rootNode.right != null) {
             oldRoot = rotateTree(rootNode.right, key, depth + 1, oldRoot);
         }
-        
+
         return oldRoot;
     }
 
@@ -88,8 +94,21 @@ public class TreeMethods {
         return root;
     }
 
-    int findDepthNode(String key, Node currentTree){
-        int depth = 1;
-        return depth;
+    int findDepthNode(String key, Node currentTree) {
+        if (currentTree == null) {
+            return 0;
+        } else if (key.compareToIgnoreCase(currentTree.data) > 0) { //data.compareTo(rootNode.data) > 0 || data > root data
+            depthOfNode++;
+            findDepthNode(key, currentTree.right);
+        } else if (key.compareToIgnoreCase(currentTree.data) < 0) { //data.compareTo(rootNode.data) < 0) || data < root data
+            depthOfNode++;
+            findDepthNode(key, currentTree.left);
+        } else if (key.compareToIgnoreCase(currentTree.data) == 0) {
+            depthOfNode1 = depthOfNode;
+            depthOfNode = 1;
+            return depthOfNode1;
+        }
+
+        return depthOfNode1;
     }
 }

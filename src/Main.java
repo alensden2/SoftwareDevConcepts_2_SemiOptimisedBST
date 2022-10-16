@@ -9,16 +9,16 @@ public class Main {
         searchTree.add("fig");
         searchTree.add("yam");
 
-        searchTree.find("apple");
-        searchTree.find("apple");
-
-        searchTree.find("apple");
-        searchTree.find("fig");
-        searchTree.find("fig");
-        searchTree.find("fig");
-        searchTree.find("fig");
-        searchTree.find("yam");
-        searchTree.find("apple");
+        int a = searchTree.find("apple");
+        int b = searchTree.find("apple");
+//
+        int c = searchTree.find("apple");
+        int d = searchTree.find("fig");
+        int e = searchTree.find("fig");
+        int f = searchTree.find("fig");
+        int g = searchTree.find("fig");
+        int i = searchTree.find("yam");
+        int j = searchTree.find("apple");
 
         // searchTree.find("egg");
         // searchTree.find("carrot");
@@ -41,6 +41,7 @@ public class Main {
         // searchTree.find("date");
         // searchTree.find("date");
         // searchTree.inorder();
+        System.out.println(a + " " + b + " " + c + " " + d + " " + e + " " + f + " " + g + " " + i + " " + j);
 
     }
 }
