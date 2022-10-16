@@ -1,11 +1,11 @@
 /**
  * STUDENT DETAILS
- * 
+ *
  * Name - Alen Santosh John
  * Email - al283652@dal.ca
  * Banner ID - B00930528
  * Assignment 2 - Binary Search Trees
- * 
+ *
  */
 
 /**
@@ -35,6 +35,7 @@ public class SearchTree {
     DynamicArray arrayOfNodes = new DynamicArray(100); // initialised size to 50
     TreeMethods treeMethods = new TreeMethods();
     Node root = rootNode;
+
 
     SearchTree() {
         rootNode = null;
@@ -91,7 +92,9 @@ public class SearchTree {
      * Return - String (key depth)
      */
     String printTree() {
-        String treeContent = treeMethods.printCurrentTree(rootNode);
+        String treeContent = treeMethods.printCurrentTreeNodes(rootNode);
+        treeMethods.resetCurrentTreeStatePrint();
         return treeContent;
     }
+
 }

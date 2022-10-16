@@ -30,17 +30,14 @@ public class RotateTree {
             if (rotateNode.left == rotateNodeChild) {
                 // right rotation
                 Node rootChanged = rightRotate(rotateNode, oldRoot);
-                System.out.println("right rotate");
                 return rootChanged;
             } else if (rotateNode.right == rotateNodeChild) {
                 // left rotation
                 Node rootChanged = leftRotate(rotateNode, oldRoot);
-                System.out.println("left rotation");
                 return rootChanged;
             }
         } else {
             // no rotation required
-            System.out.println("no rotation");
         }
         return oldRoot;
     }

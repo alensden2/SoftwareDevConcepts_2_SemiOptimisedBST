@@ -76,7 +76,11 @@ public class Main {
         System.out.println("**************************");
 
         s1.reset();
+
+
         System.out.println(s9);
+
+
 
 
         /*

@@ -17,6 +17,18 @@
  * RotateTree.java - Class file for a dynamic array of strings
  * <p>
  * CLASS DESCRIPTION
+ * <p>
+ * RotateTree.java - Class file for a dynamic array of strings
+ * <p>
+ * CLASS DESCRIPTION
+ * <p>
+ * RotateTree.java - Class file for a dynamic array of strings
+ * <p>
+ * CLASS DESCRIPTION
+ * <p>
+ * RotateTree.java - Class file for a dynamic array of strings
+ * <p>
+ * CLASS DESCRIPTION
  */
 
 /**
@@ -40,8 +52,12 @@ public class TreeMethods {
     int depth = 1;
     int depthOfNode = 1;
     int depthOfNode1 = 0;
+    String line = "";
+    String lineBackup = "";
+
     Node rootNode;
     Node currentStateTree;
+    DynamicArray currentTreeStatePrint = new DynamicArray(100);
 
     Node addNodeBst(Node rootNode, String data) {
         if (rootNode == null) {
@@ -102,11 +118,11 @@ public class TreeMethods {
         if (currentTree == null) {
             return 0;
         } else if (key.compareToIgnoreCase(currentTree.data) > 0) { // data.compareTo(rootNode.data) > 0 || data > root
-                                                                    // data
+            // data
             depthOfNode++;
             findDepthNode(key, currentTree.right);
         } else if (key.compareToIgnoreCase(currentTree.data) < 0) { // data.compareTo(rootNode.data) < 0) || data < root
-                                                                    // data
+            // data
             depthOfNode++;
             findDepthNode(key, currentTree.left);
         } else if (key.compareToIgnoreCase(currentTree.data) == 0) {
@@ -118,19 +134,22 @@ public class TreeMethods {
         return depthOfNode1;
     }
 
-    String printCurrentTree(Node currentNode) {
+    String printCurrentTreeNodes(Node currentNode) {
 
-        String line = "";
         if (currentNode != null) {
-            printCurrentTree(currentNode.left);
-            int depth = findDepthNode(currentNode.data, currentStateTree);
-            System.out.print(currentNode.data + " " + depth + "\n");
-            printCurrentTree(currentNode.right);
+            printCurrentTreeNodes(currentNode.left);
+            depth = findDepthNode(currentNode.data, currentStateTree);
+            line = line + (currentNode.data + " " + depth + "\n");
+            printCurrentTreeNodes(currentNode.right);
         }
         return line;
     }
 
-    void resetCurrentStateTree(Node currentNode){
+    void resetCurrentTreeStatePrint() {
+        line = "";
+    }
+
+    void resetCurrentStateTree(Node currentNode) {
         if (currentNode != null) {
             resetCurrentStateTree(currentNode.left);
             currentNode.searchFrequency = 0;

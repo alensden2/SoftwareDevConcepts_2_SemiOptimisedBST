@@ -64,4 +64,26 @@ public class DynamicArray {
         }
         return -2;
     }
+
+    String treeAsAString(){
+        String treeStateString = "";
+        for(int i = 0; i<dynamicArray.length; i++){
+            if(dynamicArray[i] != null){
+                treeStateString = treeStateString + dynamicArray[i];
+            } else {
+                break;
+            }
+        }
+        return treeStateString;
+    }
+
+    void resetArray(){
+        for(int i = 0; i<dynamicArray.length; i++){
+            if(dynamicArray[i] != null){
+                 dynamicArray[i] = null;
+            } else {
+                break;
+            }
+        }
+    }
 }

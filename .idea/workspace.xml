@@ -3,7 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="2eb62f7d-6a84-44de-a332-8fe6abaf79d2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RotateTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RotateTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/SearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TreeMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeMethods.java" afterDir="false" />
     </list>
@@ -54,7 +56,14 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;
   }
 }</component>
-  <component name="RunManager" selected="TestNG.SearchTreeTests">
+  <component name="RunManager" selected="Application.Main">
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Assignment_2_bst" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Assignment_2_bst" />
@@ -85,18 +94,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTreeTests.testTreeDepth" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="Assignment_2_bst" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTreeTests" />
-      <option name="METHOD_NAME" value="testTreeDepth" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="SearchTreeTests.testTreeDepth1" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Assignment_2_bst" />
       <option name="PACKAGE_NAME" value="" />
@@ -111,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SearchTreeTests" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="TestNG.SearchTreeTests" />
+        <item itemvalue="Application.Main (1)" />
         <item itemvalue="TestNG.SearchTreeTests.testTreeDepth1" />
         <item itemvalue="TestNG.SearchTreeTests.frequencyIncreaseWithFind" />
-        <item itemvalue="TestNG.SearchTreeTests.testTreeDepth" />
       </list>
     </recent_temporary>
   </component>
@@ -147,15 +144,41 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
+        <line-breakpoint type="java-line">
+          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
           <line>75</line>
-          <option name="timeStamp" value="363" />
+          <option name="timeStamp" value="391" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
+          <line>140</line>
+          <option name="timeStamp" value="392" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
+          <line>141</line>
+          <option name="timeStamp" value="393" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
+          <line>144</line>
+          <option name="timeStamp" value="395" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>76</line>
-          <option name="timeStamp" value="364" />
+          <line>77</line>
+          <option name="timeStamp" value="397" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/Main.java</url>
+          <line>74</line>
+          <option name="timeStamp" value="398" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
+          <line>58</line>
+          <properties field="currentStateTree" class="TreeMethods" />
+          <option name="timeStamp" value="396" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
