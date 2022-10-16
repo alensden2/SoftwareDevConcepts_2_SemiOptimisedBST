@@ -129,4 +129,12 @@ public class TreeMethods {
         }
         return line;
     }
+
+    void resetCurrentStateTree(Node currentNode){
+        if (currentNode != null) {
+            resetCurrentStateTree(currentNode.left);
+            currentNode.searchFrequency = 0;
+            resetCurrentStateTree(currentNode.right);
+        }
+    }
 }

@@ -59,17 +59,6 @@ public class SearchTree {
         }
     }
 
-    //
-    void inorder() {
-        inorder_Recursive(rootNode);
-    }
-
-    // recursively traverse the BST
-    void inorder_Recursive(Node root) {
-
-    }
-    //
-
     /*
      * Method 2 - searches for key
      * Input - String key
@@ -94,12 +83,7 @@ public class SearchTree {
      * Method 3 - changes counters to 0
      */
     void reset() {
-
-        if (root != null) {
-            inorder_Recursive(root.left);
-            root.searchFrequency = 0;
-            inorder_Recursive(root.right);
-        }
+        treeMethods.resetCurrentStateTree(rootNode);
     }
 
     /*
