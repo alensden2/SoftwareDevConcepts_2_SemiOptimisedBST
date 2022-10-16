@@ -42,6 +42,6 @@ public class Main {
         // searchTree.find("date");
         // searchTree.inorder();
         System.out.println(a + " " + b + " " + c + " " + d + " " + e + " " + f + " " + g + " " + i + " " + j);
-
+        System.out.println(searchTree.printTree());
     }
 }

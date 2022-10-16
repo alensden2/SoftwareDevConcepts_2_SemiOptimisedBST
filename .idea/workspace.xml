@@ -148,45 +148,24 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/SearchTree.java</url>
-          <line>104</line>
-          <option name="timeStamp" value="328" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="345" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>19</line>
-          <option name="timeStamp" value="346" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>18</line>
-          <option name="timeStamp" value="347" />
+          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="355" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
-          <line>77</line>
-          <option name="timeStamp" value="351" />
+          <line>123</line>
+          <option name="timeStamp" value="356" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
-          <line>83</line>
-          <option name="timeStamp" value="352" />
+          <line>122</line>
+          <option name="timeStamp" value="358" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
-          <line>111</line>
-          <option name="timeStamp" value="354" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-field">
-          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
-          <line>32</line>
-          <properties field="depthOfNode" class="TreeMethods" />
-          <option name="timeStamp" value="342" />
+          <line>125</line>
+          <option name="timeStamp" value="359" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

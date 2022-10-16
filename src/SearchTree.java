@@ -66,11 +66,7 @@ public class SearchTree {
 
     // recursively traverse the BST
     void inorder_Recursive(Node root) {
-        if (root != null) {
-            inorder_Recursive(root.left);
-            System.out.print(root.data + " " + root.searchFrequency + "\n");
-            inorder_Recursive(root.right);
-        }
+
     }
     //
 
@@ -111,7 +107,7 @@ public class SearchTree {
      * Return - String (key depth)
      */
     String printTree() {
-        String treeContent = "";
+        String treeContent = treeMethods.printCurrentTree(rootNode);
         return treeContent;
     }
 }

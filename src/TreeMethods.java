@@ -9,6 +9,14 @@
  * RotateTree.java - Class file for a dynamic array of strings
  * <p>
  * CLASS DESCRIPTION
+ * <p>
+ * RotateTree.java - Class file for a dynamic array of strings
+ * <p>
+ * CLASS DESCRIPTION
+ * <p>
+ * RotateTree.java - Class file for a dynamic array of strings
+ * <p>
+ * CLASS DESCRIPTION
  */
 
 /**
@@ -33,6 +41,7 @@ public class TreeMethods {
     int depthOfNode = 1;
     int depthOfNode1 = 0;
     Node rootNode;
+    Node currentStateTree;
 
     Node addNodeBst(Node rootNode, String data) {
         if (rootNode == null) {
@@ -46,6 +55,8 @@ public class TreeMethods {
             rootNode.left = addNodeBst(rootNode.left, data);
             rootNode.left.parent = rootNode; // setting the reference to parent
         }
+        currentStateTree = rootNode;
+
         return rootNode;
     }
 
@@ -64,7 +75,7 @@ public class TreeMethods {
         if (rootNode.right != null) {
             oldRoot = rotateTree(rootNode.right, key, depth + 1, oldRoot);
         }
-
+        currentStateTree = oldRoot;
         return oldRoot;
     }
 
@@ -87,13 +98,6 @@ public class TreeMethods {
         return oldRoot;
     }
 
-    Node ifRootNotNull(Node root) {
-        if (root.parent != null) {
-            ifRootNotNull(root.parent);
-        }
-        return root;
-    }
-
     int findDepthNode(String key, Node currentTree) {
         if (currentTree == null) {
             return 0;
@@ -110,5 +114,17 @@ public class TreeMethods {
         }
 
         return depthOfNode1;
+    }
+
+    String printCurrentTree(Node currentNode) {
+
+        String line = "";
+        if (currentNode != null) {
+            printCurrentTree(currentNode.left);
+            int depth = findDepthNode(currentNode.data, currentStateTree);
+            System.out.print(currentNode.data + " " + depth + "\n");
+            printCurrentTree(currentNode.right);
+        }
+        return line;
     }
 }
