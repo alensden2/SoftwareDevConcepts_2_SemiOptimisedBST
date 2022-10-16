@@ -101,10 +101,12 @@ public class TreeMethods {
     int findDepthNode(String key, Node currentTree) {
         if (currentTree == null) {
             return 0;
-        } else if (key.compareToIgnoreCase(currentTree.data) > 0) { //data.compareTo(rootNode.data) > 0 || data > root data
+        } else if (key.compareToIgnoreCase(currentTree.data) > 0) { // data.compareTo(rootNode.data) > 0 || data > root
+                                                                    // data
             depthOfNode++;
             findDepthNode(key, currentTree.right);
-        } else if (key.compareToIgnoreCase(currentTree.data) < 0) { //data.compareTo(rootNode.data) < 0) || data < root data
+        } else if (key.compareToIgnoreCase(currentTree.data) < 0) { // data.compareTo(rootNode.data) < 0) || data < root
+                                                                    // data
             depthOfNode++;
             findDepthNode(key, currentTree.left);
         } else if (key.compareToIgnoreCase(currentTree.data) == 0) {
