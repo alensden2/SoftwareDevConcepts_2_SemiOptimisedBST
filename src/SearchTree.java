@@ -1,25 +1,11 @@
 /**
  * STUDENT DETAILS
- * <p>
+ * 
  * Name - Alen Santosh John
  * Email - al283652@dal.ca
  * Banner ID - B00930528
  * Assignment 2 - Binary Search Trees
- * <p>
- * <p>
- * SearchTree.java - Class file for Search Tree
- * <p>
- * CLASS DESCRIPTION
- * <p>
- * Consists of all the pre-defined methods as mentioned in the assignment. This class calls on the
- * Helper class named treeMethods. This class helps in add, find, reset and print tree.
- * <p>
- * SearchTree.java - Class file for Search Tree
- * <p>
- * CLASS DESCRIPTION
- * <p>
- * Consists of all the pre-defined methods as mentioned in the assignment. This class calls on the
- * Helper class named treeMethods. This class helps in add, find, reset and print tree.
+ * 
  */
 
 /**
