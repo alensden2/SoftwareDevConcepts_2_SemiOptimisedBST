@@ -29,6 +29,14 @@
  * RotateTree.java - Class file for a dynamic array of strings
  * <p>
  * CLASS DESCRIPTION
+ * <p>
+ * RotateTree.java - Class file for a dynamic array of strings
+ * <p>
+ * CLASS DESCRIPTION
+ * <p>
+ * RotateTree.java - Class file for a dynamic array of strings
+ * <p>
+ * CLASS DESCRIPTION
  */
 
 /**
@@ -53,11 +61,7 @@ public class TreeMethods {
     int depthOfNode = 1;
     int depthOfNode1 = 0;
     String line = "";
-    String lineBackup = "";
-
-    Node rootNode;
     Node currentStateTree;
-    DynamicArray currentTreeStatePrint = new DynamicArray(100);
 
     Node addNodeBst(Node rootNode, String data) {
         if (rootNode == null) {
@@ -100,15 +104,13 @@ public class TreeMethods {
             System.out.println("no rotation");
         } else if (rootNode.parent.parent == null) {
             Node rotateNode = rootNode.parent;
-            Node rotateNodeParent = new Node(null);
             Node rotateNodeChild = rootNode;
-            Node nodeChanged = rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild, oldRoot);
+            Node nodeChanged = rotateTree.isRotateRequired(rotateNode, rotateNodeChild, oldRoot);
             return nodeChanged;
         } else {
             Node rotateNode = rootNode.parent;
-            Node rotateNodeParent = rootNode.parent.parent;
             Node rotateNodeChild = rootNode;
-            oldRoot = rotateTree.isRotateRequired(rotateNode, rotateNodeParent, rotateNodeChild, oldRoot);
+            oldRoot = rotateTree.isRotateRequired(rotateNode, rotateNodeChild, oldRoot);
             return oldRoot;
         }
         return oldRoot;

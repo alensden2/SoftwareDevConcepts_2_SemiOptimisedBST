@@ -36,7 +36,6 @@ public class SearchTree {
     TreeMethods treeMethods = new TreeMethods();
     Node root = rootNode;
 
-
     SearchTree() {
         rootNode = null;
     }
