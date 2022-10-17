@@ -1,33 +1,14 @@
 /**
- * STUDENT DETAILS
- *
- * Name - Alen Santosh John
- * Email - al283652@dal.ca
- * Banner ID - B00930528
- * Assignment 2 - Binary Search Trees
- *
- */
-
-/**
- * SearchTree.java - Class file for Search Tree
- */
-
-/**
- * CLASS DESCRIPTION
- *
- * Consists of all the pre-defined methods as mentioned in the assignment. This class calls on the
- * Helper class named treeMethods. This class helps in add, find, reset and print tree.
- *
- */
-
-/**
- * CONSTRUCTORS AND METHODS
- *
- * 1. Constructor - initializes a null root node
- * 2. add(String key) - @param - String; @return - boolean
- * 3. find(String key) - @param - String @return - int
- * 4. reset()
- * 5. printTree() - @return - String
+ * Software Development Concepts
+ * 
+ * @author Alen Santosh John
+ * @author B00930528
+ * 
+ *         This class is a helper class for the treeMethod class, this class
+ *         decides on
+ *         whether the tree has to be left rotates, right rotated or no rotation
+ *         is performed
+ * 
  */
 
 public class SearchTree {
@@ -40,11 +21,13 @@ public class SearchTree {
         rootNode = null;
     }
 
-    /*
-     * Method 1 - adds key to tree
-     * Input - String key
-     *
-     * @return - boolean
+    /**
+     * Returns true if the add method successfully added a new node.
+     * This method first checks if the element already exists, if not, the node
+     * is added and true is returned
+     * 
+     * @param key node key
+     * @return
      */
     boolean add(String key) {
         if (key == null || key == "") {
@@ -59,10 +42,11 @@ public class SearchTree {
         }
     }
 
-    /*
-     * Method 2 - searches for key
-     * Input - String key
-     * Return - int (depth of key)
+    /**
+     * Returns the depth for a given key if the item exists in the dynamic array
+     * 
+     * @param key string
+     * @return depth int
      */
     int find(String key) {
         int depth = 0;
@@ -79,20 +63,24 @@ public class SearchTree {
         return depth;
     }
 
-    /*
-     * Method 3 - changes counters to 0
+    /**
+     * resets the tree, sets the search frequency to zero
      */
     void reset() {
         treeMethods.resetCurrentStateTree(rootNode);
     }
 
-    /*
-     * Method 4 - creates string of trees content
-     * Return - String (key depth)
+    /**
+     * Prints the node key and the depth of the current tree.
+     * 
+     * @return treeContent String
      */
     String printTree() {
         String treeContent = treeMethods.printCurrentTreeNodes(rootNode);
         treeMethods.resetCurrentTreeStatePrint();
+        if (treeContent == null || treeContent == "") {
+            return null;
+        }
         return treeContent;
     }
 

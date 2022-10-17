@@ -1,33 +1,15 @@
 /**
- * STUDENT DETAILS
+ * Software Development Concepts
  * 
- * Name - Alen Santosh John
- * Email - al283652@dal.ca
- * Banner ID - B00930528
- * Assignment 2 - Binary Search Trees
+ * @author Alen Santosh John
+ * @author B00930528
  * 
- */
-
-/** 
- * Node.java - Class file for a node
- */
-
-/**
- * CLASS DESCRIPTION
- * 
- * Node for the binary search tree
- * each node contains data, searchFrequency and reference to the left and right
- * nodes
- * The nodes also refer the previous parent
- * the searchfrequency is initialized as 0
- * 
- */
-
-/**
- * CONSTRUCTORS AND METHODS
- * 
- * 1. Constructor - initializes a key for the node
- * 
+ *         Node for the binary search tree each node contains data,
+ *         searchFrequency and reference to the left and right nodes
+ *         The nodes also refer the previous parent the searchfrequency
+ *         is initialized as 0
+ *         References -
+ * @link - https://www.javatpoint.com/binary-tree-java
  */
 
 public class Node {
@@ -37,6 +19,11 @@ public class Node {
     Node right;
     Node parent;
 
+    /**
+     * Creates a Node object and sets the data to data
+     * 
+     * @param data the key that is passed to the node
+     */
     Node(String data) {
         this.data = data;
         this.left = null;

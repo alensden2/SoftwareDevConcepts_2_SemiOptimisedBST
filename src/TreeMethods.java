@@ -1,60 +1,18 @@
 /**
- * STUDENT DETAILS
- * <p>
- * Name - Alen Santosh John
- * Email - al283652@dal.ca
- * Banner ID - B00930528
- * Assignment 2 - Binary Search Trees
- * <p>
- * RotateTree.java - Class file for a dynamic array of strings
- * <p>
- * CLASS DESCRIPTION
- * <p>
- * RotateTree.java - Class file for a dynamic array of strings
- * <p>
- * CLASS DESCRIPTION
- * <p>
- * RotateTree.java - Class file for a dynamic array of strings
- * <p>
- * CLASS DESCRIPTION
- * <p>
- * RotateTree.java - Class file for a dynamic array of strings
- * <p>
- * CLASS DESCRIPTION
- * <p>
- * RotateTree.java - Class file for a dynamic array of strings
- * <p>
- * CLASS DESCRIPTION
- * <p>
- * RotateTree.java - Class file for a dynamic array of strings
- * <p>
- * CLASS DESCRIPTION
- * <p>
- * RotateTree.java - Class file for a dynamic array of strings
- * <p>
- * CLASS DESCRIPTION
- * <p>
- * RotateTree.java - Class file for a dynamic array of strings
- * <p>
- * CLASS DESCRIPTION
+ * Software Development Concepts
+ * 
+ * @author Alen Santosh John
+ * @author B00930528
+ * 
+ *         This class is a helper class for the SearchJava.java file. This class
+ *         provides with various methods liketo add a new node to the tree,
+ *         increase the
+ *         search frequency, rotation checks, finding the depth, printing the
+ *         tree and reseting the tree. This class can be only accessed from the
+ *         SearchTree.java class
+ * 
  */
 
-/**
- *  RotateTree.java - Class file for a dynamic array of strings
- */
-
-/**
- * CLASS DESCRIPTION
- *
- *
- */
-
-/**
- * CONSTRUCTORS AND METHODS
- *
- * 1. Constructor - initializes the size of the array
- * 2.
- */
 public class TreeMethods {
     RotateTree rotateTree = new RotateTree();
     int depth = 1;
@@ -63,6 +21,15 @@ public class TreeMethods {
     String line = "";
     Node currentStateTree;
 
+    /**
+     * Returns the root node after adding the new node to the tree. The key
+     * of the node is compared with the key of the root and if the given key
+     * is greater the new node is added to the right subtree and vice versa
+     * 
+     * @param rootNode - the root node (Node Object)
+     * @param data     - the given key for the new node
+     * @return rootNode
+     */
     Node addNodeBst(Node rootNode, String data) {
         if (rootNode == null) {
             rootNode = new Node(data);
@@ -80,6 +47,19 @@ public class TreeMethods {
         return rootNode;
     }
 
+    /**
+     * This method is called by the find method in the SearchTree.java. The method
+     * traverses the tree to find the key ( @param key ). The value of the search
+     * frequency for the node is increased. This is then passed to the
+     * "checkForRotation"
+     * method
+     * 
+     * @param rootNode rootNode (Node Object)
+     * @param key      element to be searched (String)
+     * @param depth    depth (int)
+     * @param oldRoot  oldRoot (Node Object)
+     * @return oldRoot
+     */
     Node rotateTree(Node rootNode, String key, int depth, Node oldRoot) {
         if (rootNode == null) { // If the tree is empty
             return oldRoot;
@@ -99,15 +79,25 @@ public class TreeMethods {
         return oldRoot;
     }
 
+    /**
+     * This method checks if the node is eligible to be rotated, i.e - if the root
+     * node is the root of the tree, if the node will be the root after rotation, or
+     * if the rotation is normal
+     * 
+     * @param rootNode rootNode (Node Object)
+     * @param oldRoot  oldRoot (Node Object)
+     * @return oldroot
+     */
     Node checkForRotation(Node rootNode, Node oldRoot) {
         if (rootNode.parent == null) {
-            System.out.println("no rotation");
-        } else if (rootNode.parent.parent == null) {
+            // no rotation
+            ;
+        } else if (rootNode.parent.parent == null) { // if the rotation will cause a root change
             Node rotateNode = rootNode.parent;
             Node rotateNodeChild = rootNode;
             Node nodeChanged = rotateTree.isRotateRequired(rotateNode, rotateNodeChild, oldRoot);
             return nodeChanged;
-        } else {
+        } else { // normal scenerio
             Node rotateNode = rootNode.parent;
             Node rotateNodeChild = rootNode;
             oldRoot = rotateTree.isRotateRequired(rotateNode, rotateNodeChild, oldRoot);
@@ -116,15 +106,21 @@ public class TreeMethods {
         return oldRoot;
     }
 
+    /**
+     * Returns the depth for a given key. This method is called by the find method
+     * in the SearchTree.java
+     * 
+     * @param key         element to be searched (String)
+     * @param currentTree the current tree (Node Object)
+     * @return depth (int)
+     */
     int findDepthNode(String key, Node currentTree) {
         if (currentTree == null) {
             return 0;
-        } else if (key.compareToIgnoreCase(currentTree.data) > 0) { // data.compareTo(rootNode.data) > 0 || data > root
-            // data
+        } else if (key.compareToIgnoreCase(currentTree.data) > 0) { // data > root
             depthOfNode++;
             findDepthNode(key, currentTree.right);
-        } else if (key.compareToIgnoreCase(currentTree.data) < 0) { // data.compareTo(rootNode.data) < 0) || data < root
-            // data
+        } else if (key.compareToIgnoreCase(currentTree.data) < 0) { // data < root
             depthOfNode++;
             findDepthNode(key, currentTree.left);
         } else if (key.compareToIgnoreCase(currentTree.data) == 0) {
@@ -136,25 +132,44 @@ public class TreeMethods {
         return depthOfNode1;
     }
 
+    /**
+     * Returns a string with the node key and depth. This method is called by
+     * printTree in searchTree.java
+     * 
+     * @param currentNode the current tree (Node Object)
+     * @return (String)
+     */
     String printCurrentTreeNodes(Node currentNode) {
 
         if (currentNode != null) {
             printCurrentTreeNodes(currentNode.left);
             depth = findDepthNode(currentNode.data, currentStateTree);
-            line = line + (currentNode.data + " " + depth + "\n");
+            line = line + (currentNode.data + " " + depth + "\n"); // prints the key and depth and a new line
             printCurrentTreeNodes(currentNode.right);
         }
         return line;
     }
 
+    /**
+     * This method is a helper function for the printTree methods, due to recursion
+     * after each recursion the previous data remains redudant this resets the
+     * string to empty before the next call
+     * 
+     */
     void resetCurrentTreeStatePrint() {
         line = "";
     }
 
+    /**
+     * This method resets the search frequency for all the nodes to zero. This is
+     * called from the searchTree.java by reset method
+     * 
+     * @param currentNode
+     */
     void resetCurrentStateTree(Node currentNode) {
         if (currentNode != null) {
             resetCurrentStateTree(currentNode.left);
-            currentNode.searchFrequency = 0;
+            currentNode.searchFrequency = 0; // resets the search frequency to zero
             resetCurrentStateTree(currentNode.right);
         }
     }
