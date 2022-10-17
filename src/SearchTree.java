@@ -78,8 +78,11 @@ public class SearchTree {
     String printTree() {
         String treeContent = treeMethods.printCurrentTreeNodes(rootNode);
         treeMethods.resetCurrentTreeStatePrint();
-        if (treeContent == null || treeContent == "") {
+        if (treeContent == null) {
             return null;
+        }
+        if (treeContent == "") {
+            return "";
         }
         return treeContent;
     }

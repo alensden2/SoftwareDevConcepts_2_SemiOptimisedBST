@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2eb62f7d-6a84-44de-a332-8fe6abaf79d2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.attach_pid5026" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/apiguardian-api-1.1.2.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-api-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-engine-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-jupiter-params-5.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-commons-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/junit-platform-engine-1.8.1.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/opentest4j-1.2.0.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/DynamicArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/DynamicArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/TreeMethods.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TreeMethods.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment_2_bst.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment_2_bst.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test/SearchTreeTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/Test/SearchTreeTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/SearchTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/SearchTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +62,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.SearchTreeTests">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="Assignment_2_bst" />
@@ -63,60 +70,50 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTreeTests" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTreeTests$PrintTests$Boundaries.printTreeWithOneNodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment_2_bst" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTreeTests" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="SearchTreeTests.PrintTests" />
+      <option name="MAIN_CLASS_NAME" value="SearchTreeTests$PrintTests$Boundaries" />
+      <option name="METHOD_NAME" value="printTreeWithOneNodeTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTreeTests.testFindBoundaryCases" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTreeTests$PrintTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment_2_bst" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTreeTests" />
-      <option name="METHOD_NAME" value="testFindBoundaryCases" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="SearchTreeTests" />
+      <option name="MAIN_CLASS_NAME" value="SearchTreeTests$PrintTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTreeTests.testResetEmptytree" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTreeTests$SearchTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment_2_bst" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="SearchTreeTests" />
-      <option name="METHOD_NAME" value="testResetEmptytree" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="PACKAGE_NAME" value="SearchTreeTests" />
+      <option name="MAIN_CLASS_NAME" value="SearchTreeTests$SearchTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTreeTests.testfindBoundaryCasesLongString" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SearchTreeTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment_2_bst" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="SearchTreeTests" />
-      <option name="METHOD_NAME" value="testfindBoundaryCasesLongString" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SearchTreeTests" />
+        <item itemvalue="JUnit.SearchTreeTests$PrintTests$Boundaries.printTreeWithOneNodeTest" />
+        <item itemvalue="JUnit.SearchTreeTests$PrintTests" />
+        <item itemvalue="JUnit.SearchTreeTests$SearchTests" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="TestNG.SearchTreeTests" />
-        <item itemvalue="TestNG.SearchTreeTests.testResetEmptytree" />
-        <item itemvalue="TestNG.SearchTreeTests.testfindBoundaryCasesLongString" />
-        <item itemvalue="TestNG.SearchTreeTests.testFindBoundaryCases" />
       </list>
     </recent_temporary>
   </component>
@@ -150,23 +147,38 @@
       <breakpoints>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>74</line>
+          <line>76</line>
           <option name="timeStamp" value="399" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>77</line>
+          <line>79</line>
           <option name="timeStamp" value="401" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>80</line>
+          <line>82</line>
           <option name="timeStamp" value="402" />
         </line-breakpoint>
         <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/Main.java</url>
-          <line>78</line>
+          <line>80</line>
           <option name="timeStamp" value="403" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
+          <line>145</line>
+          <option name="timeStamp" value="408" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
+          <line>126</line>
+          <option name="timeStamp" value="409" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/TreeMethods.java</url>
+          <line>118</line>
+          <option name="timeStamp" value="410" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
