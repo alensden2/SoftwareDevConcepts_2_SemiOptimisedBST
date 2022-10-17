@@ -69,9 +69,12 @@ public class DynamicArray {
             return -1;
         } else {
             for (int i = 0; i < dynamicArray.length; i++) {
-                if (dynamicArray[i] == element) {
-                    return i;
+                if (dynamicArray[i] != null) {
+                    if (dynamicArray[i].compareToIgnoreCase(element) == 0) {
+                        return i;
+                    }
                 }
+
             }
         }
         return -2;

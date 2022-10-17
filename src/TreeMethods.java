@@ -35,10 +35,10 @@ public class TreeMethods {
             rootNode = new Node(data);
             return rootNode;
         }
-        if (data.compareTo(rootNode.data) > 0) { // data > root data
+        if (data.compareToIgnoreCase(rootNode.data) > 0) { // data > root data
             rootNode.right = addNodeBst(rootNode.right, data);
             rootNode.right.parent = rootNode; // setting the reference to parent
-        } else if (data.compareTo(rootNode.data) < 0) { // data < root data
+        } else if (data.compareToIgnoreCase(rootNode.data) < 0) { // data < root data
             rootNode.left = addNodeBst(rootNode.left, data);
             rootNode.left.parent = rootNode; // setting the reference to parent
         }
