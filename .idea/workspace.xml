@@ -61,14 +61,7 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.editor.code.editing&quot;
   }
 }</component>
-  <component name="RunManager" selected="JUnit.SearchTreeTests">
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Assignment_2_bst" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.SearchTreeTests">
     <configuration name="SearchTreeTests$PrintTests$Boundaries.printTreeWithOneNodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Assignment_2_bst" />
       <option name="PACKAGE_NAME" value="SearchTreeTests.PrintTests" />
@@ -106,13 +99,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SearchTreeTests" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Assignment_2_bst" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="SearchTreeTests" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.SearchTreeTests" />
         <item itemvalue="JUnit.SearchTreeTests" />
         <item itemvalue="JUnit.SearchTreeTests$PrintTests$Boundaries.printTreeWithOneNodeTest" />
         <item itemvalue="JUnit.SearchTreeTests$PrintTests" />
         <item itemvalue="JUnit.SearchTreeTests$SearchTests" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
